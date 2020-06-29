@@ -2,7 +2,7 @@ var allPapers = [];
 class Paper {
     constructor (x, y, radius) {
         this.radius = radius;
-        this.image = loadImage('Images/paper.png');
+        this.image = loadImage('paper.png');
         this.body = Bodies.circle(x, y, this.radius * 2/3, {isStatic: false, restitution: 0.3, friction: 0.5, density: 1.2});
         Worlds.add(world, this.body);
         this.launch = function() {
