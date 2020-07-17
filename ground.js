@@ -4,7 +4,7 @@ class Ground {
         this.width = width;
         this.height = height;
         this.body = Bodies.rectangle(x, y, this.width, this.height, {isStatic:true});
-        Worlds.add(world, this.body);
+        World.add(world, this.body);
         this.display = function () {
             push();
             strokeWeight(0);
@@ -18,7 +18,7 @@ class Ground {
     }
 }
 function displayAllGrounds () {
-    for (i = 0; i < allGrounds.length; i++) {
-        allGrounds[i].display();
+    for (loop1 = 0; loop1 < allGrounds.length; loop1 += 1) {
+        allGrounds[loop1].display();
     }
 }
